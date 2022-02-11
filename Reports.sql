@@ -1,16 +1,18 @@
  ----------------------------------------------------------------------------------------------------------------------
 -- 13
 Create or Replace View ONLINESTOREDB.V_Most_Sold_Prod As
-Select Itm.PRODUCTID, Prd.PRODUCTNAME, ord.Status, Lc.city, max(Quantity) Quantity_sold
-From ONLINESTOREDB.OrderItems Itm, ONLINESTOREDB.Products Prd, ONLINESTOREDB.Orders ord, ONLINESTOREDB.Warehouses WH, ONLINESTOREDB.Locations LC
+Select Itm.PRODUCTID, Prd.PRODUCTNAME, ord.Status, Cnt.CountryName, max(Quantity) Quantity_sold
+From ONLINESTOREDB.OrderItems Itm, ONLINESTOREDB.Products Prd, ONLINESTOREDB.Orders ord, 
+ONLINESTOREDB.Warehouses WH, ONLINESTOREDB.Locations LC, ONLINESTOREDB.Countries Cnt
 where Itm.PRODUCTID = Prd.PRODUCTID
 and  Itm.OrderID =  ord.OrderID
 and  Itm.Warehouseid  = WH.Warehouseid
 and WH.Location = LC.LocationID     
+and lc.country = cnt.CountryID
 and Ord.status = 'COMPLETED'
 and Ord.ORDERDATE > sysdate -7
-group by Itm.PRODUCTID, Prd.PRODUCTNAME, ord.Status, Lc.city
-order by Quantity_sold desc; 
+group by Itm.PRODUCTID, Prd.PRODUCTNAME, ord.Status, Cnt.CountryName
+order by Quantity_sold desc;
 
 -------------------------------------------------------------------------------------------------------------
 -- 14

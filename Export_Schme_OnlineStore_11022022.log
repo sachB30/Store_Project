@@ -1,0 +1,56 @@
+;;; 
+Export: Release 19.0.0.0.0 - Production on Fri Feb 11 19:29:49 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Starting "SYS"."SYS_EXPORT_SCHEMA_01":  "/******** AS SYSDBA" directory=data_pump_dir dumpfile=Export_Schme_OnlineStore_11022022.dump logfile=Export_Schme_OnlineStore_11022022.log schemas=ONLINESTOREDB 
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/STATISTICS/MARKER
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+. . exported "ONLINESTOREDB"."BKP_EMPLOYEES"             10.27 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_PRODUCTS"               8.75 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_CUSTOMER"              7.992 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_ORDERITEMS"             8.25 KB      11 rows
+. . exported "ONLINESTOREDB"."BKP_ORDERS"                7.757 KB      11 rows
+. . exported "ONLINESTOREDB"."BKP_CONTACTS"              7.742 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_LOCATIONS"             7.632 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_INVENTORY"             6.703 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_WAREHOUSES"            6.234 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_DEPARTMENT"            6.187 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_COUNTRIES"             6.171 KB      10 rows
+. . exported "ONLINESTOREDB"."COUNTRIES"                 6.164 KB      10 rows
+. . exported "ONLINESTOREDB"."BKP_PRODUCT_CATEGORY"      5.773 KB      12 rows
+. . exported "ONLINESTOREDB"."BKP_REGIONS"               5.656 KB       7 rows
+. . exported "ONLINESTOREDB"."REGIONS"                   5.648 KB       7 rows
+. . exported "ONLINESTOREDB"."CONTACTS"                  7.742 KB      10 rows
+. . exported "ONLINESTOREDB"."CUSTOMER"                  7.992 KB      10 rows
+. . exported "ONLINESTOREDB"."DEPARTMENT"                6.187 KB      10 rows
+. . exported "ONLINESTOREDB"."EMPLOYEES"                 10.26 KB      10 rows
+. . exported "ONLINESTOREDB"."INVENTORY"                 6.695 KB      10 rows
+. . exported "ONLINESTOREDB"."LOCATIONS"                 7.625 KB      10 rows
+. . exported "ONLINESTOREDB"."ORDERITEMS"                8.242 KB      11 rows
+. . exported "ONLINESTOREDB"."ORDERS"                     7.75 KB      11 rows
+. . exported "ONLINESTOREDB"."PRODUCTS"                   8.75 KB      10 rows
+. . exported "ONLINESTOREDB"."PRODUCT_CATEGORY"          5.773 KB      12 rows
+. . exported "ONLINESTOREDB"."STORE_AUDIT_TABLE_CHANGE"  7.742 KB       1 rows
+. . exported "ONLINESTOREDB"."WAREHOUSES"                6.226 KB      10 rows
+Master table "SYS"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYS.SYS_EXPORT_SCHEMA_01 is:
+  E:\DATA_PUMP_DIR\EXPORT_SCHME_ONLINESTORE_11022022.DUMP
+Job "SYS"."SYS_EXPORT_SCHEMA_01" successfully completed at Fri Feb 11 19:30:30 2022 elapsed 0 00:00:36
